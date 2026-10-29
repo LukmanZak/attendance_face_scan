@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="hr_attendance_form_face_scan_evidence" model="ir.ui.view">
+        <field name="name">hr.attendance.form.face.scan.evidence</field>
+        <field name="model">hr.attendance</field>
+        <field name="inherit_id" ref="hr_attendance.hr_attendance_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page
+                    string="Face Scan Evidence"
+                    name="face_scan_evidence"
+                    groups="hr_attendance.group_hr_attendance_manager">
+                    <field name="face_scan_ids" readonly="1">
+                        <list create="false" edit="false" delete="false">
+                            <field name="scan_time"/>
+                            <field name="action"/>
+                            <field name="similarity"/>
+                            <field name="name"/>
+                        </list>
+                        <form create="false" edit="false" delete="false">
+                            <group>
+                                <group>
+                                    <field name="employee_id"/>
+                                    <field name="action"/>
+                                    <field name="scan_time"/>
+                                    <field name="similarity"/>
+                                </group>
+                                <field name="scan_image" widget="image" options="{'preview_image': 'scan_image'}"/>
+                            </group>
+                        </form>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

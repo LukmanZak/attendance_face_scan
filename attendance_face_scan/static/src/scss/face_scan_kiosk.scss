@@ -1,0 +1,74 @@
+.o_face_scan_options {
+    display: flex;
+    flex-direction: row !important;
+    align-items: stretch;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.o_face_scan_options .o_hr_attendance_kiosk {
+    position: relative;
+    min-width: 280px;
+    min-height: 230px;
+}
+
+.o_face_scan_options .o_mobile_barcode {
+    position: static !important;
+    width: 100%;
+    min-height: 230px;
+}
+
+.o_face_scan_options .o_hr_attendance_install_btn {
+    position: absolute !important;
+    top: 0.5rem;
+    right: 0.5rem;
+    left: auto !important;
+}
+
+.o_face_scan_option {
+    display: flex;
+    min-width: 280px;
+    min-height: 230px;
+    padding: 3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.o_face_scan_kiosk_file {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+}
+
+.o_face_scan_option:focus-within {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+.o_face_video_panel {
+    flex-basis: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+.o_face_video_stage {
+    position: relative;
+    line-height: 0;
+}
+.o_face_video_stage video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+}
+.o_face_video_overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}

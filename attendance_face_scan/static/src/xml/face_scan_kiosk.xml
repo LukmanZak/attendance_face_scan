@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-inherit="hr_attendance.public_kiosk_app" t-inherit-mode="extension">
+        <xpath expr="//KioskBarcodeScanner/../.." position="attributes">
+            <attribute name="class" add="o_face_scan_options" separator=" "/>
+        </xpath>
+        <xpath expr="//KioskBarcodeScanner" position="after">
+            <label class="o_face_scan_option btn btn-light btn-lg rounded-3">
+                <i class="oi oi-3x mb-3" data-icon="person" aria-hidden="true"/>
+                <span class="d-block">Scan Wajah dari Video</span>
+                <input type="file" accept="video/mp4,video/webm,.mp4,.webm"
+                       class="o_face_scan_kiosk_file" aria-label="Pilih video wajah"
+                       t-on-change="this.onFaceVideoSelected"/>
+            </label>
+        </xpath>
+    </t>
+</templates>
+

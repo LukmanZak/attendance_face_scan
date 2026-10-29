@@ -1,0 +1,4 @@
+id,name,model_id,group_id/id,operation,domain
+access_attendance_face_embedding_manager,attendance.face.embedding.manager,attendance.face.embedding,hr_attendance.group_hr_attendance_manager,r,
+access_attendance_face_scan_manager,attendance.face.scan.manager,attendance.face.scan,hr_attendance.group_hr_attendance_manager,r,
+access_attendance_face_video_event_manager,attendance.face.video.event.manager,attendance.face.video.event,hr_attendance.group_hr_attendance_manager,r,
