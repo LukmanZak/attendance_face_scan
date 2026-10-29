@@ -30,7 +30,7 @@ Odoo 20 with `hr_attendance`, PostgreSQL with pgvector, the dependencies in `req
 
 ## Performance and costs
 
-On an Intel Core i5-1335U with 15.7 GiB RAM, a local test of one 250 × 295 image measured **11.4 ms median** for detection and embedding across 11 warm runs; model loading took 196.6 ms. This excludes browser rendering, database matching, attendance and Sheets sync. FPS, CPU usage during scanning, end-to-end latency and concurrent capacity have not been measured.
+On an Intel Core Gen 13 with 15.7 GiB RAM, a local test of one 250 × 295 image measured **11.4 ms median** for detection and embedding across 11 warm runs; model loading took 196.6 ms. This excludes browser rendering, database matching, attendance and Sheets sync. FPS, CPU usage during scanning, end-to-end latency and concurrent capacity have not been measured.
 
 Detection runs locally without a paid AI API per scan. Hardware, electricity, maintenance, hosting and any applicable [Odoo license](https://www.odoo.com/pricing) remain potential costs. Google services have [usage quotas](https://developers.google.com/apps-script/guides/services/quotas); monthly costs depend on the deployment and usage.
 
