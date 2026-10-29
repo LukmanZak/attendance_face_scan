@@ -2,6 +2,15 @@
 
 Modul Odoo 20 untuk scan wajah dari video, pencocokan pegawai, pencatatan absensi, dan sinkronisasi ke Google Sheets. Deteksi menggunakan YuNet dan SFace, dengan titik wajah MediaPipe dan pencocokan embedding melalui pgvector.
 
+## Perbandingan deteksi wajah
+
+| Pegawai | Foto tanpa deteksi | Hasil deteksi dari video |
+| --- | --- | --- |
+| Maya Carter | ![Maya tanpa deteksi](screenshots/maya-before.png) | ![Deteksi Maya](screenshots/maya-detection.png) |
+| Daniel Brooks | ![Daniel tanpa deteksi](screenshots/daniel-before.png) | ![Deteksi Daniel](screenshots/daniel-detection.png) |
+
+Persentase menunjukkan skor deteksi wajah. Titik biru menunjukkan landmark wajah.
+
 ## Bukti
 
 Absensi di Odoo:
